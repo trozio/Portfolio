@@ -1,81 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<title>Document</title>
 </head>
+
 <body>
-	<body>
-	    <style type="text/css">
-	   body { background: #f0f0f0 !important; }
-	</style>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
-        <a class="navbar-brand ml-5 p-3" style="font-family: Times New Roman; background: #4aaaa5; color: white; font-size: 32px;">Daniel Adelman</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#danielNavbarToggler" aria-controls="danielNavbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+	<nav>
+		<div class="nav-wrapper blue">
+			<a href="#" class="brand-logo center">Daniel Adelman</a>
+			<a href="#" data-target="hamburgerMenu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			<ul class="left hide-on-med-and-down">
+				<li><a href="index.html">About</a></li>
+				<li class="active"><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
 
-<div class="collapse navbar-collapse" id="danielNavbarToggler">
-    <ul class="navbar-nav ml-auto mr-3">
-      <li class="nav-item">
-        <a class="nav-link ml-3" href="index.html">About<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link ml-3" href="portfolio.html">Portfolio</a>
-      </li>
-      <li>
-          <a class="nav-link ml-3" href="contact.html">Contact</a>
-      </li>
-      </div>
-  </nav>
+	<ul class="sidenav" id="hamburgerMenu">
+		<li><a href="index.html">About</a></li>
+		<li><a href="portfolio.html">Portfolio</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
 
-	  <div class="card mt-3 ml-auto mr-auto" style="width: 75%;">
-	  <div class="card-body">
-	  	<div class="card-header mb-3" style="color: #4aaaa5; font-size: 24px;">
-	    Portfolio
-	  	  </div>
 
-                      <div class="img-fluid mr-3" style="position: relative; float: left; width: 274px; margin: 20px 0 25px; overflow: auto;">
-  				<img src= "cat.jpg" alt="hangman" style="width: 100%;">
-                <a href="https://trozio.github.io/Word-Guess-Game/">
-                <h3 style="position: absolute; bottom: 20px;margin-bottom: 0;width: 100%;padding: 15px;font-weight: 300;line-height: 30px;color: #ffffff; text-align: center;background: #4aaaa5;border-bottom: 0;">Hangman</h3></a>
+    <div class="row">
+        <div id="aboutMe" class="col s8">
+	<div class="card">
+		<div class="card-content">
+			<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+		</div>
+		<div class="card-tabs">
+			<ul class="tabs tabs-fixed-width">
+				<li class="tab"><a class="active" href="#hangman">Hangman</a></li>
+				<li class="tab"><a href="#crystalCollector">Crystal Collector</a></li>
+				<li class="tab"><a href="#trivia">Trivia Game</a></li>
+				<li class="tab"><a href="#giphy">Giphtastic</a></li>
+				<li class="tab"><a href="#train">Train Scheduler</a></li>
+			</ul>
+		</div>
+		<div class="card-content grey lighten-4">
+			<div id="hangman"><img src="./images/wordguess.png" alt="hangman" style="width: 800px; height: 500px;">
+				<a href="https://trozio.github.io/Word-Guess-Game/"><p style="text-align: center;">Click Here</p></a></div>
+			<div id="crystalCollector"><img src="./images/crystalcollector.png" alt="crystalcollector" style="width: 800px; height: 500px;">
+				<a href="https://trozio.github.io/unit-4-game/."></a></div>
+			<div id="trivia"><img src="./images/trivia.png" alt="triviagame" style="width: 800px; height: 500px;">
+				<a href="https://trozio.github.io/TriviaGame/"></a></div>
+			<div id="giphy"><img src="./images/giphy.png" alt="giphy" style="width: 800px; height: 500px;">
+				<a href="https://trozio.github.io/Giphtastic/"></a></div>
+			<div id="train"><img src="./images/trainscheduler.png" alt="rockpaperscissors" style="width: 800px; height: 500px;">
+				<a href="https://trozio.github.io/Train-Scheduler/">
                 </div>
-                        <div class="img-fluid mr-3" style="position: relative; float: left; width: 274px; margin: 20px 0 25px; overflow: auto;">
-                  <img src= "desk.jpg" alt="rpggame" style="width: 100%;">
-                  <a href="https://trozio.github.io/unit-4-game/.">
-                  <h3 style="position: absolute; bottom: 20px;margin-bottom: 0;width: 100%;padding: 15px;font-weight: 300;line-height: 30px;color: #ffffff; text-align: center;background: #4aaaa5;border-bottom: 0;">RPG Game</h3></a>
-                  </div>
-                      <div class="img-fluid mr-3" style="position: relative; float: left; width: 274px; margin: 20px 0 25px; overflow: auto;">
-                <img src= "bear.jpg" alt="triviagame" style="width: 100%;">
-                <a href="https://trozio.github.io/TriviaGame/"><h3 style="position: absolute; bottom: 20px;margin-bottom: 0;width: 100%;padding: 15px;font-weight: 300;line-height: 30px;color: #ffffff; text-align: center;background: #4aaaa5;border-bottom: 0;">Trivia Game</h3></a>
-                </div>
-                        <div class="img-fluid mr-3" style="position: relative; float: left; width: 274px; margin: 20px 0 25px; overflow: auto;">
-                    <img src= "cat.jpg" alt="rutgersinfowallet" style="width: 100%;">
-                    <a href="https://trozio.github.io/Giphtastic/">
-                    <h3 style="position: absolute; bottom: 20px;margin-bottom: 0;width: 100%;padding: 15px;font-weight: 300;line-height: 30px;color: #ffffff; text-align: center;background: #4aaaa5;border-bottom: 0;">Giphtastic</h3></a>
-                    </div>
-                    <div class="img-fluid" style="position: relative; float: left; width: 274px; margin: 20px 0 25px; overflow: auto;">
-                    <img src= "cat2.jpg" alt="rockpaperscissors" style="width: 100%;">
-                    <a href="https://trozio.github.io/Train-Scheduler/">
-                    <h3 style="position: absolute; bottom: 20px;margin-bottom: 0;width: 100%;padding: 15px;font-weight: 300;line-height: 30px;color: #ffffff; text-align: center;background: #4aaaa5;border-bottom: 0;">Train Scheduler</h3></a>
-                    </div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+
+<footer class="page-footer blue">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
               </div>
-				</div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="javascript/project.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+</body>
 
-
-
-
-	  <footer>
-	      <div class="copyright fixed-bottom pt-3 pb-0" style="text-align: center; background: #666; border-top: 8px solid #4aaaa5;">
-	          <p>Copyright &#169;</p>
-	      </div>
-	  </footer>
-
-	  </body>
-	  </html>
+</html>
