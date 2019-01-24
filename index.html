@@ -5,63 +5,43 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="./css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
 	<title>Document</title>
 </head>
 
 <body>
-	<style type="text/css">
-		body {
-			background: #f0f0f0 !important;
-		}
-	</style>
-	<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light p-0">
-		<a class="navbar-brand ml-5 p-3" style="font-family: Times New Roman; background: #4aaaa5; color: white; font-size: 32px;">Daniel Adelman</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#danielNavbarToggler" aria-controls="danielNavbarToggler" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="danielNavbarToggler">
-			<ul class="navbar-nav ml-auto mr-3">
-				<li class="nav-item">
-					<a class="nav-link ml-3" href="index.html">About<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link ml-3" href="portfolio.html">Portfolio</a>
-				</li>
-				<li>
-					<a class="nav-link ml-3" href="contact.html">Contact</a>
-				</li>
+	<nav>
+		<div class="nav-wrapper blue">
+			<a href="#" class="brand-logo center">Daniel Adelman</a>
+			<a href="#" data-target="hamburgerMenu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+			<ul class="left hide-on-med-and-down">
+				<li class="active"><a href="index.html">About</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
 		</div>
 	</nav>
 
+	<ul class="sidenav" id="hamburgerMenu">
+		<li><a href="index.html">About</a></li>
+		<li><a href="portfolio.html">Portfolio</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
 
-	<div class="card ml-auto mr-auto" style="width: 75%; margin-top: 100px; margin-bottom: 100px;">
-		<img class="card-img-top" style="float: left; width: 50%;" src="me.jpg">
-		<div class="card-header" style="color: #4aaaa5; font-size: 24px;">
-			About Me
-		</div>
-		<div class="card-body">
-
-			<div class="divider" style="background: #f0f0f0; width: 100%;"></div>
-
-
-
-				<div>
-					<a href="https://github.com/trozio">
-						<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 100px; width: 100px;">
-					</a>
-					<a href="https://www.linkedin.com/in/daniel-adelman-121b62173"><img src="https://pndblog.typepad.com/.a/6a00e0099631d0883301bb09d01edf970d-800wi" style="height: 100px; width: 100px;"></a>
+	<div class="row">
+		<div id="aboutMe" class="col s8">
+			<div class="card">
+				<div class="card-image waves-effect waves-block waves-light">
+					<img class="activator" src="me.jpg" id="image">
 				</div>
-				<span>
-					Link to resume: <a href="https://1drv.ms/w/s!AmArRa3KA5DPmth-F0r0xVGmrPjoiA">Here</a>
-				</span>
-				<div class="projects">Bike Advisor: <a href="https://github.com/chrisoffiong/Project-One">Code Link</a> <a href="https://chrisoffiong.github.io/Project-One/">Deployed Site</a><br>Trivia Game: <a href="https://github.com/trozio/TriviaGame">Code Link</a> <a href="https://trozio.github.io/TriviaGame/">Deployed Site</a><br> Crystal Collector: <a href="https://github.com/trozio/unit-4-game">Code Link</a> <a href="https://trozio.github.io/unit-4-game/">Deployed Site</a></div>
-
-
+				<div class="card-content">
+					<span id="header" class="card-title activator grey-text text-darken-4">About Me<i class="material-icons right">more_vert</i></span>
 					<p>My name is Daniel Adelman. I was originally born in Barcelona, Spain but I moved to Atlanta when I was five years old. I am fluent in both English and Spanish and have basic knowledge of many other languages. My hobbies include playing
 						soccer
 						on the weekends with friends, tinkering with performance modifications to my car, playing video games, and reading the latest news in the tech world. Technology has always been my passion and to be able to manipulate it and make it my own
@@ -70,13 +50,54 @@
 						years old currently. He and I played a lot of soccer growing up. In fact, I was the captain of my middle school and high school soccer team. I also played for a select club team that traveled around Georgia competing in the first division
 						league
 						of Georgia.</p>
-
-			</div>
-			<footer>
-				<div class="copyright fixed-bottom pt-3 pb-0" style="text-align: center; background: #666; border-top: 8px solid #4aaaa5;">
-					<p>Copyright &#169;</p>
 				</div>
-			</footer>
+				<div class="card-reveal">
+					<span class="card-title grey-text text-darken-4">Links<i class="material-icons right">close</i></span>
+
+					<a href="https://github.com/trozio">
+						<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="height: 100px; width: 100px;">
+					</a>
+					<a href="https://www.linkedin.com/in/daniel-adelman-121b62173"><img src="https://pndblog.typepad.com/.a/6a00e0099631d0883301bb09d01edf970d-800wi" style="height: 100px; width: 100px;"></a>
+
+					<span>
+						Link to resume: <a href="https://1drv.ms/w/s!AmArRa3KA5DPmth-F0r0xVGmrPjoiA">Here</a>
+					</span>
+					<div class="projects">Bike Advisor: <a href="https://github.com/chrisoffiong/Project-One">Code Link</a> <a href="https://chrisoffiong.github.io/Project-One/">Deployed Site</a><br>Trivia Game: <a href="https://github.com/trozio/TriviaGame">Code
+							Link</a> <a href="https://trozio.github.io/TriviaGame/">Deployed Site</a><br> Crystal Collector: <a href="https://github.com/trozio/unit-4-game">Code Link</a> <a href="https://trozio.github.io/unit-4-game/">Deployed Site</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="page-footer blue">
+		<div class="container">
+			<div class="row">
+				<div class="col l6 s12">
+					<h5 class="white-text">Footer Content</h5>
+					<p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+				</div>
+				<div class="col l4 offset-l2 s12">
+					<h5 class="white-text">Links</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="container">
+				© 2014 Copyright Text
+				<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+			</div>
+		</div>
+	</footer>
+
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script src="javascript/project.js"></script>
 
 </body>
 
