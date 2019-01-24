@@ -2,7 +2,7 @@ body {
 	background: #f0f0f0 !important;
 }
 #aboutMe{
-	margin-left: 18%;
+	margin-left: 10%;
 	padding: 24px;
 }
 .card{
@@ -19,13 +19,14 @@ body {
 	width: 250px;
 }
 #form{
-	margin-left: 15%;
+	margin-left: 10%;
 }
 #formCard{
 	background: white;
 	height: 500px;
 	margin-top: 32px;
 }
-.page-footer{
-
+#portfolio{
+	margin-left: 10%;
+	margin-top: 24px;
 }
