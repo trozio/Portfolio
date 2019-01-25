@@ -20,3 +20,8 @@ body {
 input, textarea{
 	color: white;
 }
+@media (max-width: 650px) {
+	body.custom-background {
+		background-attachment: scroll !important;
+	}
+}
