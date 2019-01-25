@@ -5,7 +5,7 @@ body {
 
 #landing{
     height: 100vh;
-    background-image: url("https://coolbackgrounds.io/images/backgrounds/index/compute-9be870b0.png");
+    background-image: url("../images/background.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
