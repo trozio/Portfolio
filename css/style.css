@@ -7,7 +7,7 @@ body {
     height: 100vh;
     background-image: url("https://coolbackgrounds.io/images/backgrounds/index/compute-9be870b0.png");
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: -1;
