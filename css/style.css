@@ -1,32 +1,18 @@
 body {
-	background: #f0f0f0 !important;
+    background-color: black;
+    color: rgba(255,255,255,0.8);
 }
-#aboutMe{
-	margin-left: 10%;
-	padding: 24px;
+
+#landing{
+    height: 100vh;
+    background-image: url("https://coolbackgrounds.io/images/backgrounds/index/compute-9be870b0.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
 }
-.card{
-	padding: 24px;
-}
-.brand-logo{
-	margin-left: 12px;
-}
-#header{
+#mainText{
+    margin-top: 30vh;
 	color: white;
-}
-#image{
-	height: 250px;
-	width: 250px;
-}
-#form{
-	margin-left: 10%;
-}
-#formCard{
-	background: white;
-	height: 500px;
-	margin-top: 32px;
-}
-#portfolio{
-	margin-left: 10%;
-	margin-top: 24px;
 }
