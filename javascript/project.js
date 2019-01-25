@@ -1,7 +1,11 @@
 M.AutoInit();
 $(document).ready(function(){
-    $('.sidenav').sidenav();
+
   });
+
+  setTimeout(function(){
+      $("#icon").addClass("scale-in");
+  }, 500)
 
 $("#submit").on("click", function(event){
 	event.preventDefault();
