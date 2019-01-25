@@ -1,6 +1,6 @@
 M.AutoInit();
 $(document).ready(function(){
-
+    $('.parallax').parallax();
   });
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.fixed-action-btn');
