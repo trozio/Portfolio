@@ -2,6 +2,12 @@ M.AutoInit();
 $(document).ready(function(){
 
   });
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, {
+      hoverEnabled: false
+    });
+  });
 
   setTimeout(function(){
       $("#icon").addClass("scale-in");
@@ -13,9 +19,9 @@ $("#submit").on("click", function(event){
 	let email = $("#email").val();
 	let message = $("#message").val();
     // sendMail();
-    $("#first_name").empty();
-    $("#email").empty();
-    $("#message").empty();
+    $("#first_name").val("");
+    $("#email").val("");
+    $("#message").val("");
 	M.textareaAutoResize($("#message"));
 })
 // function sendMail() {
