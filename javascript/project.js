@@ -11,7 +11,7 @@ $(document).ready(function(){
 
   setTimeout(function(){
       $("#icon").addClass("scale-in");
-  }, 500)
+  }, 1000)
 
 $("#submit").on("click", function(event){
 	event.preventDefault();
