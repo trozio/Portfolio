@@ -17,12 +17,6 @@ app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "index.html"));
 });
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/html');
-  res.end(helpText);
-});
-
 app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT);
 });
