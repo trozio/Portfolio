@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "materialize-css": "^1.0.0-rc.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trozio/Portfolio.git"
+  },
+  "author": "Daniel Adelman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trozio/Portfolio/issues"
+  },
+  "homepage": "https://github.com/trozio/Portfolio#readme"
+}
