@@ -1,5 +1,5 @@
 M.AutoInit();
-let mailFunc = require("../../mail.js");
+import sendMail from "../../mailjs";
 
 $(document).ready(function(){
     $('.parallax').parallax();
@@ -25,7 +25,7 @@ $("#submit").on("click", function(event){
   mail.email = email;
   mail.message = message;
 
-  mailFunc.sendMail(mail);
+  sendMail(mail);
 
 
 
