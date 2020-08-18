@@ -1,4 +1,6 @@
 M.AutoInit();
+const nodemailer = require('nodemailer');
+
 $(document).ready(function(){
     $('.parallax').parallax();
   });
@@ -18,8 +20,35 @@ $("#submit").on("click", function(event){
 	let name = $("#first_name").val();
 	let email = $("#email").val();
 	let message = $("#message").val();
-    $("#first_name").val("");
-    $("#email").val("");
-    $("#message").val("");
-	M.textareaAutoResize($("#message"));
+  let mail = {};
+  let mail.name = name;
+  let mail.email = email;
+  let mail.message = message;
+
+
+
+
+  const transporter = nodemailer.createTransport({
+    service: 'outlook.office.com',
+    auth: {
+      user: 'daniel@daniadelman.com',
+      pass: 'pr1ngad2!'
+    }
+  });
+
+  let mailOptions = {
+    from: 'daniel@daniadelman.com',
+    to: 'daniel@daniadelman.com',
+    subject: 'New Client',
+    text: mail
+  };
+
+  transporter.sendMail(mailOptions, function(error, info){
+    if (error) {
+      console.log(error);
+    } else {
+      console.log('Email sent: ' + info.response);
+    }
+  });
+  	M.textareaAutoResize($("#message"));
 })
