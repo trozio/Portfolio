@@ -1,5 +1,5 @@
 M.AutoInit();
-let orderFunc = import ("./mail.js");
+let orderFunc = import ("../../mail.js");
 
 $(document).ready(function(){
     $('.parallax').parallax();
