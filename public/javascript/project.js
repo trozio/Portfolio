@@ -1,5 +1,5 @@
 M.AutoInit();
-import sendMail from "../../mailjs";
+let orderFunc = import ("../../mail.js");
 
 $(document).ready(function(){
     $('.parallax').parallax();
@@ -25,7 +25,7 @@ $("#submit").on("click", function(event){
   mail.email = email;
   mail.message = message;
 
-  sendMail(mail);
+  orderFunc.sendMail(mail);
 
 
 
