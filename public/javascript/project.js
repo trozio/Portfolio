@@ -21,9 +21,9 @@ $("#submit").on("click", function(event){
 	let email = $("#email").val();
 	let message = $("#message").val();
   let mail = {};
-  let mail.name = name;
-  let mail.email = email;
-  let mail.message = message;
+  mail.name = name;
+  mail.email = email;
+  mail.message = message;
 
 
 
