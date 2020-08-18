@@ -1,5 +1,5 @@
 M.AutoInit();
-const nodemailer = require('nodemailer');
+// const nodemailer = require('nodemailer');
 
 $(document).ready(function(){
     $('.parallax').parallax();
