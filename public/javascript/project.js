@@ -23,13 +23,13 @@ $("#submit").on("click", function(event){
   mail.email = email;
   mail.message = message;
 
-  $.ajax({
-    url: "http://localhost:3000/mail",
-    type: "POST",
-    data: mail
-  }).then(function(response){
-    console.log(response);
-  })
+  // $.ajax({
+  //   url: "http://localhost:3000/mail",
+  //   type: "POST",
+  //   data: mail
+  // }).then(function(response){
+  //   console.log(response);
+  // })
 
   $("#first_name").val("");
 	$("#email").val("");
