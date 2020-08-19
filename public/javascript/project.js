@@ -1,6 +1,4 @@
 M.AutoInit();
-let orderFunc = import ("../../mail.js");
-
 $(document).ready(function(){
     $('.parallax').parallax();
   });
@@ -25,9 +23,17 @@ $("#submit").on("click", function(event){
   mail.email = email;
   mail.message = message;
 
-  orderFunc.sendMail(mail);
+  $.ajax({
+    url: "http://localhost:3000/mail",
+    type: "POST",
+    data: mail
+  }).then(function(response){
+    console.log(response);
+  })
 
-
+  $("#first_name").val("");
+	$("#email").val("");
+	$("#message").val("");
 
   M.textareaAutoResize($("#message"));
 })
